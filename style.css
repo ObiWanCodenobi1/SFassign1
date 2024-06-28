@@ -190,7 +190,7 @@ h2,h3{
     background-image: url("bg.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: justify;
+    text-align: center;
 }
 
 .labels{
