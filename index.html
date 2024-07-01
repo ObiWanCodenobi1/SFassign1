@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 <body>
     <nav>
         <div class = column>
             <img src = "logo.png">
         </div>
-        <a href = "#Intro" title = "Home">Home</a>
-        <a href = "#Projects" title = "Projects">Projects</a>
-        <a href = "#Skills" title = "Skills">Skills</a>
-        <a href = "#Contact" title = "Contact">Contact Me </a>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+        <li><a href = "#Intro" title = "Home">Home</a></li>
+        <li><a href = "#Projects" title = "Projects">Projects</a></li>
+        <li><a href = "#Skills" title = "Skills">Skills</a></li>
+        <li><a href = "#Contact" title = "Contact">Contact Me </a></li>
+        </ul>
     </nav>
-    <br id = #Intro>
+    <br id = "Intro">
     <br> <br>
     <div class = "home">
         <h2>About Me</h2>
@@ -24,9 +32,11 @@
         <p>
         Hi, I am Aditya.<br>
         I am a mechanical engineering student in IIT Kharagpur.<br>
-        I am a robotics enthusiast, budding web developer and AI aficianado.
+        I am a robotics enthusiast and a budding web developer.
         </p>
+        <br><br><br>
         <a href="#Contact">Contact Me</a>
+        <br><br><br>
     </div>
     <img src = "me.jpg">
     </div>
@@ -117,23 +127,15 @@
         </div>
     </div>
     <br id = "Contact">
-    <div class = "form">
-        <h2>Contact Me</h2><br>
-        <form>
-            <div class = "labels">
-                <label for = "name"> Name: </label><br>
-                <label for="email"> Email: </label><br>
-                <label for = "date">Appointment Date:</label><br>
-                <lable for = "message">Message:</lable><br>
-            </div>
-            <div class = "inputs">
-                <input type = "text" id = "name" name = "name"><br>
-                <input type="email" id = "email" name = "email"><br>
-                <input type = "datetime" id = "date" name = "date"><br>
-                <textarea id = "message" name = "message"></textarea><br>
-                <input type="submit" value="Submit">
-            </div>
-            
+
+    <div class="wrapper">
+        <form class="form">
+          <div class="pageTitle title">Contact Me </div>
+          <input type="text" class="name formEntry" placeholder="Name" />
+          <input type="text" class="email formEntry" placeholder="Email"/>
+          <input type="date" class="date formEntry" placeholder="Date"/>
+          <textarea class="message formEntry" placeholder="Message"></textarea>
+          <button class="submit formEntry" onclick="thanks()">Submit</button>
         </form>
     </div>
 </body>
